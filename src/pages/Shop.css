@@ -1,0 +1,31 @@
+.shop-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.shop-grid article {
+	padding: 5px;
+	height: 35vh;
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: 20vh;
+}
+
+.shop-grid article div {
+	max-height: 20vh;
+}
+
+.shop-grid article div img {
+	transition: transform 0.5s ease;
+}
+
+.shop-grid article div:hover img {
+	transform: scale(1.05);
+}
